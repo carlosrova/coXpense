@@ -1,0 +1,6 @@
+Django==4.2.16
+django-cors-headers==4.4.0
+django-extensions==3.2.3
+djangorestframework==3.15.2
+drf-writable-nested==0.7.0
+dynamic-rest==2.3.0
