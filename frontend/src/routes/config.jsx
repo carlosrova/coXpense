@@ -27,22 +27,37 @@ export const routesConfig = [
   },
   {
     path: "/",
-    element: <ProtectedRoute><Groups /></ProtectedRoute>,
-  },
-  {
-    path: "/groups/:groupId/expenses",
-    element: <ProtectedRoute><CardListWithTabs header="Expenses" pages={pages} /></ProtectedRoute>,
-  },
-  {
-    path: "/groups/:groupId/balance",
-    element: <ProtectedRoute><CardListWithTabs header="Balance" pages={pages} /></ProtectedRoute>,
-  },
-  {
-    path: "/groups/:groupId/members",
-    element: <ProtectedRoute><CardListWithTabs header="Members" pages={pages} /></ProtectedRoute>,
+    element:
+      <ProtectedRoute>
+        <Groups />
+      </ProtectedRoute>,
   },
   {
     path: "/profile",
-    element: <ProtectedRoute><Profile /></ProtectedRoute>,
+    element:
+      <ProtectedRoute>
+        <Profile />
+      </ProtectedRoute>,
+  },
+  {
+    path: "/groups/:groupId/expenses",
+    element:
+      <ProtectedRoute>
+        <CardListWithTabs header="Expenses" pages={pages} />
+      </ProtectedRoute>,
+  },
+  {
+    path: "/groups/:groupId/balance",
+    element:
+      <ProtectedRoute>
+        <CardListWithTabs header="Balance" pages={pages} />
+      </ProtectedRoute>,
+  },
+  {
+    path: "/groups/:groupId/members",
+    element:
+      <ProtectedRoute>
+        <CardListWithTabs header="Members" pages={pages} />
+      </ProtectedRoute>,
   },
 ];
