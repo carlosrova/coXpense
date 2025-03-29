@@ -1,7 +1,7 @@
 import CardList from "./CardList";
 import { useState } from "react";
 import { CONSTANTS } from "../utils/constants";
-import { useAuth } from "./AuthContext";
+import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from "react-router-dom";
 import {
     FormControl,

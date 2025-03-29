@@ -1,5 +1,5 @@
 import CardList from "./CardList";
-import { useAuth } from "./AuthContext";
+import { useAuth } from '../contexts/AuthContext';
 import { useState, useEffect } from "react";
 import { CONSTANTS } from "../utils/constants";
 import {

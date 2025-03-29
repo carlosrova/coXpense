@@ -13,7 +13,7 @@ import {
 } from '@chakra-ui/react';
 import { Select as MultipleSelect } from "chakra-react-select";
 import { CONSTANTS } from '../utils/constants';
-import { useAuth } from './AuthContext';
+import { useAuth } from '../contexts/AuthContext';
 import formatDate from '../utils/formatDate';
 
 export default function Members() {

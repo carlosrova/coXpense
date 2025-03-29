@@ -20,7 +20,7 @@ import {
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { Link, useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from './AuthContext';
+import { useAuth } from '../contexts/AuthContext';
 import coXpenseIco from '../assets/coXpenseIco.png';
 
 
@@ -28,12 +28,8 @@ const Links = [
   { name: 'Groups', path: '/' }
 ];
 
-interface NavLinkProps {
-  name: string;
-  path: string;
-}
 
-const NavLink = ({ name, path }: NavLinkProps) => {
+const NavLink = ({ name, path }) => {
   const location = useLocation();
   const isActive = location.pathname === path;
   const linkBgColor = useColorModeValue('orange.200', 'orange.100')
@@ -58,11 +54,8 @@ const NavLink = ({ name, path }: NavLinkProps) => {
   );
 };
 
-interface NavbarWithUserProps {
-  children: React.ReactNode;
-}
 
-export default function NavbarWithUser({ children }: NavbarWithUserProps) {
+export default function NavbarWithUser({ children }) {
   const { userId, logout, avatarUrl } = useAuth()
   const navigate = useNavigate();
   const { isOpen, onOpen, onClose } = useDisclosure();

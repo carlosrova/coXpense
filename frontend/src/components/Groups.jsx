@@ -21,7 +21,7 @@ import {
 import { CONSTANTS } from '../utils/constants';
 import formatDate from '../utils/formatDate';
 import CardList from './CardList';
-import { useAuth } from './AuthContext';
+import { useAuth } from '../contexts/AuthContext';
 
 export default function Groups() {
   const { userId } = useAuth();

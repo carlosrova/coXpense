@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { CONSTANTS } from '../utils/constants';
-import { useAuth } from './AuthContext';
+import { useAuth } from '../contexts/AuthContext';
 
 const Login = () => {
   const { userId, login } = useAuth();
