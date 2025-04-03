@@ -188,11 +188,11 @@ To install the coXpense application, follow these steps:
 
 1. Clone the repository:
 ```
-   git clone --branch web50/projects/2020/x/capstone https://github.com/me50/carlosrova.git capstone
+   git clone --branch main https://github.com/carlosrova/coXpense coXpense
 ```
 2. Navigate to the project directory:
 ```
-cd capstone
+cd coXpense
 ```
 3. Install the required dependencies:
 ```
